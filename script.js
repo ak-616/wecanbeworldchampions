@@ -93,7 +93,7 @@ function updateDisabledStates() {
     const oscarRadios = document.querySelectorAll('input[name="oscarPos"]');
 
     maxRadios.forEach(r => {
-        if (oscarSelected !== null && Number(r.value) === oscarSelected) {
+        if (oscarSelected !== null && Number(r.value) === oscarSelected && Number(r.value) !==11) {
             r.disabled = true;
             // If this one is checked and must be disabled, uncheck it
             if (r.checked) r.checked = false;
@@ -103,7 +103,7 @@ function updateDisabledStates() {
     });
 
     oscarRadios.forEach(r => {
-        if (maxSelected !== null && Number(r.value) === maxSelected) {
+        if (maxSelected !== null && Number(r.value) === maxSelected && Number(r.value) !==11) {
             r.disabled = true;
             if (r.checked) r.checked = false;
         } else {
