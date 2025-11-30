@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lando Title Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Lando Title Calculator</h1>
+        <p class="subtitle">
+            Lando is <strong>+12</strong> ahead of Max and <strong>+16</strong> ahead of Oscar before the race.
+            Choose their race results and see the <strong>minimum position</strong> Lando needs.
+        </p>
+
+        <div class="columns">
+            <div class="driver-column">
+                <h2>Max Verstappen</h2>
+                <div class="positions" id="max-positions">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+
+            <div class="driver-column">
+                <h2>Oscar Piastri</h2>
+                <div class="positions" id="oscar-positions">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </div>
+
+        <button id="calculate-btn">Calculate Lando's minimum position</button>
+
+        <div id="result" class="result-box">
+            Select positions for both drivers to see the result.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
